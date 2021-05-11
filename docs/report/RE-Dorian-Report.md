@@ -49,6 +49,7 @@ The replication study by Holler (2021) used R, including the rtweet, rehydratoR,
 The script needed to replicate the data search is included [here](/procedure/code/01-tornado-search.r). This research searched for tweets from the week leading up to May 04, 2021 within 3,000 mi of Atlanta, GA, where a tornado watch was issued. The keywords included in this search were "tornado", "warning", "shelter", and "storm." Baseline data on Twitter activity to compare with the tornado tweets and to create the Normalized Tweet Difference Index (NTDI) as per Holler (2021) were also generated. The search for this baseline data was essentially the inverse of the search for the tornado data and excluded all tweets that contained the above keywords.
 
 [Tornado tweet ids for rehydration](/data/derived/public/GAtweetids.txt)
+
 [Baseline tweet ids for rehydration](/data/derived/public/GAbaselineids.txt)
 
 [This script](/procedure/code/02-analyze-tornado.r) contains the procedure for several analyses run on these tweets. First, tweets were analyzed temporally to determine when tornado-related activity was high. The script also details how the tweet contents were graphed to see which terms occurred most frequently, and they were also mapped and compared to [population density data](/data/derived/public/counties.RDS) from the US Census.
@@ -59,22 +60,22 @@ In [this script](/procedure/code/04-spatial-clustering-tornado.r), the NTDI (Hol
 
 The temporal analysis of tweet activity in the region yielded the results shown in **Fig. 1.** There was clearly an increase in tornado-related Twitter activity around May 4.
 
-![Fig. 1](twit/results/figures/tornadoTime.png)
+![Fig. 1](/twit/results/figures/tornadoTime.png)
 _Fig. 1_ Temporal analysis.
 
 The content analysis graph shown in **Fig. 2** counts the instances of unique words found in tweets, and it is clear that "watch," which was not included as a keyword in this analysis, showed up frequently in tornado-related tweets.
 
-![Fig. 2](twit/results/figures/tornado_freqWord.png)
+![Fig. 2](/twit/results/figures/tornado_freqWord.png)
 _Fig. 2._ Tweet content analysis.
 
 The map of twitter activity in **Fig. 3** is shown in comparison to county population data.
 
-![Fig. 3](twit/results/figures/GAtornado_PopDensity.png)
+![Fig. 3](/twit/results/figures/GAtornado_PopDensity.png)
 _Fig. 3_ Map of tornado-related Twitter activity.
 
 Finally, **Fig. 4** shows the cluster hotspot analysis to show where there was significant deviation from baseline Twitter data.
 
-![Fig. 4](twit/results/figures/Rplot_GAclusters.png)
+![Fig. 4](/twit/results/figures/Rplot_GAclusters.png)
 _Fig. 4_ Cluster hotspot analysis.
 
 
