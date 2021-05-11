@@ -38,9 +38,10 @@ twitter_token = create_token(
   app = "",                     #enter your app name in quotes
   consumer_key = "",  		      #enter your consumer key in quotes
   consumer_secret = "",         #enter your consumer secret in quotes
-  access_token = NULL,
-  access_secret = NULL
+  access_token = "",
+  access_secret = ""
 )
+
 
 # get tweets for hurricane Dorian, searched on September 11, 2019
 # this code will no longer work! It is here for reference.
